@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script type="module" src="./scripts/script.js" defer></script>
+    <script type="module" src="./scripts/choose.js" defer></script>
+    <!-- <script type="module" src="./scripts/run-exe.js" defer></script> -->
+    <title>Anti-DE</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container flex">
+            <div class="testInputBox">
+                <textarea class="testInput" placeholder="Введите свой тест"></textarea>
+            </div>
+
+            <div class="choose-block">
+                <div class="choose-chapter">
+                    <label class="chapter-lbl" for="chapter">Раздел ▾</label>
+                    <select class="chapter" name="chapter">
+                        <option value="ch-none">-</option>
+                        <option value="ch-p2">1. P2</option>
+                        <option value="ch-pk">2. Pk</option>
+                        <option value="ch-dfa">3. Автоматы</option>
+                        <option value="ch-minimization">4. Минимизация ДНФ</option>
+                    </select>
+                </div>
+
+                <div class="choose-task">
+                    <label class="task-lbl" for="task">Задача ▾</label>
+                    <select class="task" name="task">
+                        <option value="task1">-</option>
+                    </select>
+                </div>
+
+                <button class="solve_test">Решить</button>
+
+                <div class="load-tests" title="На свой страх и риск">
+                    <button class="load-btn" title="На свой страх и риск">Все тесты</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="container flex">
+            <div class="result_box">
+                <textarea class="result" placeholder="Ожидаемый ответ на ваш тест"></textarea>
+                <div class="copy c1">copy</div>
+
+                <div class="analysis-btns">
+                    <div>
+                        <button class="analysis-start">Разбор (P2)</button>
+                    </div>
+                    <div>
+                        <button class="load-exe">Load Exe</button>
+                    </div>
+                    <div>
+                        <button class="run-exe">Run Exe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tests_box">
+                <textarea class="tests" placeholder="Примеры тестов"></textarea>
+                <div class="copy c2">copy</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal closed">
+        <div class="modal-close">
+            <img src="./images/close.png" alt="modal close button">
+        </div>
+        <div class="modal-img">
+            <img src="./images/icn.png" alt="modal icon">
+        </div>
+
+        <div class="modal-title">
+            <p>Anti-DE 2.0.0</p>
+        </div>
+        <div class="modal-info">
+            <p>Проект для помощи студентам при написании<br>практикума 1 курс 2 семестр (дискретная математика)</p>
+        </div>
+        <div class="modal-donate">
+            <p>На чай: 5555 3666 0250 1226</p>
+        </div>
+
+        <!-- <div class="modal-author">
+            <p>Автор идеи: </p>
+        </div> -->
+
+        <div class="modal-socials">
+            <div class="telegram">
+                <img src="./images/telegram.png" alt="telegram icon">
+                <p>Канал проекта</p>
+            </div>
+            <div class="github">
+                <img src="./images/github.png" alt="github icon">
+                <p>Source (скоро)</p>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <div class="info">
+        <img src="./images/info.png" alt="info">
+    </div>
+</body>
+</html>

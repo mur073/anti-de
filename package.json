@@ -1,0 +1,33 @@
+{
+  "name": "Anti-DE",
+  "profuctName": "Anti-DE",
+  "version": "2.0.0",
+  "description": "Anti DE app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "mur_io",
+  "license": "MIT",
+  "devDependencies": {
+    "antlr4": "^4.13.0",
+    "browserify": "^17.0.0",
+    "child_process": "^1.0.2",
+    "electron": "^25.2.0",
+    "electron-builder": "^24.4.0",
+    "javascript-obfuscator": "^4.0.2"
+  },
+  "build": {
+    "appId": "com.mur_io.app",
+    "productName": "Anti-De App",
+    "mac": {
+      "icon": "./renderer/images/icon",
+      "category": "msu-anti-de"
+    },
+    "extraResources": [
+      "tests/**"
+    ]
+  }
+}
