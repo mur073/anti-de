@@ -94,9 +94,6 @@ function createMainWindow() {
 }
 
 app.whenReady().then(() => {
-    // ipcMain.handle('dialog:openFile', handleFileOpen);
-    // ipcMain.handle('run-exe', runExe);
-
     createMainWindow();
 
     app.on("activate", () => {
@@ -111,15 +108,3 @@ app.on("window-all-closed", () => {
         app.quit();
     }
 });
-
-async function handleFileOpen () {
-    const { canceled, filePaths } = await dialog.showOpenDialog();
-
-    a = canceled; b = filePaths;
-
-    if (!canceled) {
-        return filePaths[0];
-    } else {
-        return null;
-    }
-}
