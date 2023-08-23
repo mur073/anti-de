@@ -14,4 +14,4 @@ Each EC is represented by a string of length $n$ without spaces, where the $i$-t
 1*0\
 *01
 
-We consider that * comes after all other characters in the alphabet (when ordering the conjunctions). In the case where the DNF is empty (i.e., contains $0$ conjunctions), the file should contain $n 0$, where $n$ is the number of variables.
+We consider that * comes after all other characters in the alphabet (when ordering the conjunctions). In the case where the DNF is empty (i.e., contains $0$ conjunctions), the file should contain $n$ $0$, where $n$ is the number of variables.
