@@ -9,9 +9,9 @@ Boolean algebra functions are defined by a vector of values: first comes the num
 
 ### Output file format
 
-Each EC is represented by a string of length $n$ without spaces, where the $i$-th position holds $1$ if the $i$-th variable is included in the EC without negation, $0$ if it is included with negation, and $*$ if it is not included in the EC. For example, the DNF of a function $$x_1\land\lnot{x_3}\lor\lnot{x_2}\land x_3$$ with $3$ variables is defined as follows:\
+Each EC is represented by a string of length $n$ without spaces, where the $i$-th position holds $1$ if the $i$-th variable is included in the EC without negation, $0$ if it is included with negation, and * if it is not included in the EC. For example, the DNF of a function $$x_1\land\lnot{x_3}\lor\lnot{x_2}\land x_3$$ with $3$ variables is defined as follows:\
 3 2\
 1*0\
 *01
 
-We consider that $*$ comes after all other characters in the alphabet (take this into account when ordering the conjunctions). In the case where the DNF is empty (i.e., contains $0$ conjunctions), the file should contain $n 0$, where $n$ is the number of variables.
+We consider that * comes after all other characters in the alphabet (take this into account when ordering the conjunctions). In the case where the DNF is empty (i.e., contains $0$ conjunctions), the file should contain $n 0$, where $n$ is the number of variables.
