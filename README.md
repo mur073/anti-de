@@ -16,7 +16,8 @@
    ```bash
    cd anti-de
    ```
-3. Run electron app:
+3. Install required npm packages and run electron app:
    ```bash
+   npm install
    electron .
    ```
