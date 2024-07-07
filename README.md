@@ -5,3 +5,18 @@
 ![Example of program](./renderer/images/example.png)
 
 ***
+
+## Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/mur073/anti-de.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd anti-de
+   ```
+3. Run electron app:
+   ```bash
+   electron .
+   ```
